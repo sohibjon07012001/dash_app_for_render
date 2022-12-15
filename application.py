@@ -31,14 +31,14 @@ launch_uid = uuid4()
 #         cache, cache_by=[lambda: launch_uid], expire=60
 #     )
 
-server = Flask(__name__)
+server_flask = Flask(__name__)
 # external_scripts = ["https://unpkg.com/dash.nprogress@latest/dist/dash.nprogress.js"] #external_scripts=external_scripts,
-application = dash.Dash(use_pages=True, server=server,  suppress_callback_exceptions=True,
+application = dash.Dash(use_pages=True, server=server_flask,  suppress_callback_exceptions=True,
                         external_stylesheets=[
                             dbc.themes.COSMO, dbc.icons.FONT_AWESOME],
                             )
 server = application.server
-app = application.server
+
 # du_configure = du.configure_upload(application, r"Datasets", use_upload_id=False,upload_api=None, http_request_handler=None)
 application.title = 'aloqabank'
 # application._favicon = ("zypl_logo.jpg")
