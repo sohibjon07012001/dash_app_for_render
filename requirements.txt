@@ -1,0 +1,13 @@
+catboost==1.1.1
+dash==2.6.2
+dash_bootstrap_components==1.2.1
+dash_iconify==0.1.2
+dash_mantine_components==0.10.2
+dash_svg==0.0.11
+diskcache==5.4.0
+feffery_antd_components==0.1.16
+Flask==2.1.3
+Flask_Login==0.6.2
+matplotlib==3.5.3
+shap==0.41.0
+ipython==7.34.0
